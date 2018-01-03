@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e4d-YB-AdT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Qc-jh-KGC">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -208,7 +208,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginnerBallerBG" translatesAutoresizingMaskIntoConstraints="NO" id="fFo-bq-i2C">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginnerBallerBG" translatesAutoresizingMaskIntoConstraints="NO" id="fFo-bq-i2C" userLabel="background">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LZ3-dk-vly" userLabel="Header">
@@ -239,15 +239,45 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mT1-th-i5t" userLabel="Buttons">
+                                <rect key="frame" x="16" y="308" width="343" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJ9-I5-Trn" customClass="BorderButton" customModule="swoosh" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="166.5" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.47145226880000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="KCm-c0-4Kv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal" title="Beginner">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTM-Or-tFB" customClass="BorderButton" customModule="swoosh" customModuleProvider="target">
+                                        <rect key="frame" x="176.5" y="0.0" width="166.5" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.47145226880000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="XwK-GO-Q9V"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal" title="Baller">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="xd8-pH-R5m" firstAttribute="trailing" secondItem="zyk-Ch-KnS" secondAttribute="trailingMargin" id="2Co-vS-u9z"/>
                             <constraint firstItem="LZ3-dk-vly" firstAttribute="leading" secondItem="Es6-zG-Lty" secondAttribute="leading" constant="16" id="B9e-mj-afS"/>
+                            <constraint firstItem="mT1-th-i5t" firstAttribute="trailing" secondItem="Es6-zG-Lty" secondAttribute="trailing" constant="-16" id="BKt-Z2-4pB"/>
+                            <constraint firstItem="mT1-th-i5t" firstAttribute="centerY" secondItem="zyk-Ch-KnS" secondAttribute="centerY" id="C9o-00-ewb"/>
                             <constraint firstItem="Es6-zG-Lty" firstAttribute="trailing" secondItem="LZ3-dk-vly" secondAttribute="trailing" constant="16" id="Ele-sG-mjK"/>
                             <constraint firstItem="fFo-bq-i2C" firstAttribute="trailing" secondItem="zyk-Ch-KnS" secondAttribute="trailing" id="Hz6-dO-Ouy"/>
                             <constraint firstItem="LZ3-dk-vly" firstAttribute="top" secondItem="Es6-zG-Lty" secondAttribute="top" constant="20" id="MA8-8O-CoG"/>
                             <constraint firstItem="fFo-bq-i2C" firstAttribute="leading" secondItem="zyk-Ch-KnS" secondAttribute="leading" id="VU6-cv-YRM"/>
+                            <constraint firstItem="mT1-th-i5t" firstAttribute="leading" secondItem="Es6-zG-Lty" secondAttribute="leading" constant="16" id="bZP-aS-jHC"/>
                             <constraint firstItem="fFo-bq-i2C" firstAttribute="top" secondItem="zyk-Ch-KnS" secondAttribute="top" id="ksj-52-dy4"/>
                             <constraint firstItem="xd8-pH-R5m" firstAttribute="leading" secondItem="zyk-Ch-KnS" secondAttribute="leadingMargin" id="lBA-lr-XCk"/>
                             <constraint firstItem="fFo-bq-i2C" firstAttribute="bottom" secondItem="zyk-Ch-KnS" secondAttribute="bottom" id="rIp-O3-Pyd"/>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07BE64E21FFF073A00B0575D /* LeagueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BE64E11FFF073A00B0575D /* LeagueVC.swift */; };
+		07BE64E41FFF074A00B0575D /* SkillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BE64E31FFF074A00B0575D /* SkillVC.swift */; };
 		07E4FF581FFBB68900D38192 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E4FF571FFBB68900D38192 /* AppDelegate.swift */; };
 		07E4FF5A1FFBB68900D38192 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E4FF591FFBB68900D38192 /* WelcomeVC.swift */; };
 		07E4FF5D1FFBB68900D38192 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E4FF5B1FFBB68900D38192 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07BE64E11FFF073A00B0575D /* LeagueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueVC.swift; sourceTree = "<group>"; };
+		07BE64E31FFF074A00B0575D /* SkillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillVC.swift; sourceTree = "<group>"; };
 		07E4FF541FFBB68900D38192 /* swoosh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swoosh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07E4FF571FFBB68900D38192 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07E4FF591FFBB68900D38192 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
@@ -48,6 +52,8 @@
 			isa = PBXGroup;
 			children = (
 				07E4FF591FFBB68900D38192 /* WelcomeVC.swift */,
+				07BE64E11FFF073A00B0575D /* LeagueVC.swift */,
+				07BE64E31FFF074A00B0575D /* SkillVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -164,7 +170,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E4FF5A1FFBB68900D38192 /* WelcomeVC.swift in Sources */,
+				07BE64E21FFF073A00B0575D /* LeagueVC.swift in Sources */,
 				07E4FF581FFBB68900D38192 /* AppDelegate.swift in Sources */,
+				07BE64E41FFF074A00B0575D /* SkillVC.swift in Sources */,
 				07E4FF6C1FFBBA2A00D38192 /* BorderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
